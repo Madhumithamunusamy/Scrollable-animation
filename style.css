@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Canvas full screen */
+#scroll-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Scroll height */
+.spacer {
+  height: 500vh;
+}
+
+/* Text overlay */
+.text-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.text-section h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.text-section p {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  margin-top: 10px;
+}
